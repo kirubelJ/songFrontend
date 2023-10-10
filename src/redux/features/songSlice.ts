@@ -81,9 +81,12 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
     Authorization: "Bearer my-token",
     "My-Custom-Header": "foobar",
   };
-  const response = await axios.get(`${process.env.REACT_APP_RESTAPI_GET_ALL}`, {
-    headers,
-  });
+  const response = await axios.get(
+    `https://songrestapi.onrender.com/songs/all`,
+    {
+      headers,
+    }
+  );
   const responseArray = response.data.data;
   console.log(responseArray);
   return responseArray;
