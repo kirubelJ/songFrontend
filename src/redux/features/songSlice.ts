@@ -81,15 +81,30 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
   //   Authorization: "Bearer my-token",
   //   "My-Custom-Header": "foobar",
   // };
-  const response = await axios.get(
-    "https://songbackend-2l9j.onrender.com/songs/all"
-  );
-  const responseArray = response.data.data;
-  console.log("woev");
-  console.log(responseArray);
-  return responseArray;
-  //setLoading(false);
-});
+
+//   const response = await axios.get(
+//     "http://songbackend-2l9j.onrender.com/songs/all"
+//   );
+//   const responseArray = response.data.data;
+//   console.log("woev");
+//   console.log(responseArray);
+//   return responseArray;
+//   //setLoading(false);
+// });
+// Make a request for a user with a given ID
+axios.get('http://songbackend-2l9j.onrender.com/songs/all')
+  .then(function (response) {
+    // handle success
+    console.log(response);
+    return response;
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
 
 //
 interface SongAddSchema {
