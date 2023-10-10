@@ -26,7 +26,7 @@ const ReadAll = () => {
 
   return (
     <div className="RAMain">
-      <h1>loading</h1>
+      <h1>loading2</h1>
       <div className="grid">
         {list.map((item) => (
           <div className="songCard" key={item._id}>
