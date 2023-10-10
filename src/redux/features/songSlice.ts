@@ -91,8 +91,12 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
   // return responseArray;
   // //setLoading(false);
 
+  const headers = {
+    Accecpt: "*/*",
+  };
+
   axios
-    .get("http://songbackend-2l9j.onrender.com/songs/all")
+    .get("http://songbackend-2l9j.onrender.com/songs/all", { headers })
     .then(function (response) {
       // handle success
       console.log(response);
