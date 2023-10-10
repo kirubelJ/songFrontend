@@ -82,12 +82,13 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
     "My-Custom-Header": "foobar",
   };
   const response = await axios.get(
-    `https://songrestapi.onrender.com/songs/all`,
+    "https://songrestapi.onrender.com/songs/all",
     {
       headers,
     }
   );
   const responseArray = response.data.data;
+  console.log("woev");
   console.log(responseArray);
   return responseArray;
   //setLoading(false);
