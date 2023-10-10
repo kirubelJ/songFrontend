@@ -18,8 +18,13 @@ const Landing = () => {
   //
   useEffect(() => {
     //
+    const headers = {
+      Authorization: "Bearer my-token",
+      "My-Custom-Header": "foobar",
+    };
+    //
     axios
-      .get(`${process.env.REACT_APP_RESTAPI}/${Filter}/${SearchID}`)
+      .get(`${process.env.REACT_APP_RESTAPI}/${Filter}/${SearchID}`,{headers})
       .then(function (response) {
         // handle success
         console.log(response.data);
