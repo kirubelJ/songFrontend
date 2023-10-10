@@ -156,7 +156,7 @@ export const deteteSongAction = createAsyncThunk(
     //console.log(props);
     const headers = {
       Authorization: "Bearer my-token",
-      "Access-Control-Allow-Origin": "*"
+      "Access-Control-Allow-Origin": "*",
     };
     axios
       .delete(`${process.env.REACT_APP_RESTAPI_DELETE}/${props._id}`, {
