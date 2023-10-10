@@ -92,7 +92,7 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
   // //setLoading(false);
 
   const headers = {
-    Accecpt: "*/*",
+    Accept: "*/*",
   };
 
   axios
