@@ -1,0 +1,36 @@
+.Manage_main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("./images/musicW.jpg");
+  background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  column-gap: 300px;
+  /* Center vertically */
+  position: absolute;
+  top: 17%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%; /* Half this element's height */
+}
+
+.grid-item {
+  background-color: rgb(225, 202, 202);
+  border-radius: 15%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+
+  /*  */
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}

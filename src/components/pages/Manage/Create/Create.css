@@ -1,0 +1,17 @@
+.CreateMain {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(55, 53, 53);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  /* background-color: chocolate; */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
