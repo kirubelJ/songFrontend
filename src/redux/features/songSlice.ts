@@ -82,44 +82,46 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
   //   "My-Custom-Header": "foobar",
   // };
 
-  // const response = await axios.get(
-  //   "http://songbackend-2l9j.onrender.com/songs/all"
-  // );
-  // const responseArray = response.data.data;
-  // console.log("woev");
-  // console.log(responseArray);
-  // return responseArray;
-  // //setLoading(false);
+  const response = await axios.get(
+    "https://songrestapi.onrender.com/songs/all"
+  );
+  const responseArray = response.data.data;
+  console.log("woev");
+  console.log(responseArray);
+  return responseArray;
+  //setLoading(false);
 
-  const headers = {
-    Accept: "*/*",
-  };
+  // const headers = {
+  //   Accept: "*/*"
+  //   ""Content-type": "application/json"
+  // };
 
-  axios
-    .get("https://songrestapi.onrender.com/songs/all", { headers })
-    .then(function (response) {
-      // handle success
-      console.log(response);
-      return response;
-    })
-    .catch(function (error) {
-      if (error.response) {
-        // The request was made and the server responded with a status code
-        // that falls out of the range of 2xx
-        console.log(error.response.data);
-        console.log(error.response.status);
-        console.log(error.response.headers);
-      } else if (error.request) {
-        // The request was made but no response was received
-        // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-        // http.ClientRequest in node.js
-        console.log(error.request);
-      } else {
-        // Something happened in setting up the request that triggered an Error
-        console.log("Error", error.message);
-      }
-      console.log(error.config);
-    });
+  // axios
+  //   .get("https://songrestapi.onrender.com/songs/all", { headers })
+  //   .then(function (response) {
+  //     // handle success
+  //     console.log(response);
+  //     console.log(response.data.data);
+  //     return response.data.data;
+  //   })
+  //   .catch(function (error) {
+  //     if (error.response) {
+  //       // The request was made and the server responded with a status code
+  //       // that falls out of the range of 2xx
+  //       console.log(error.response.data);
+  //       console.log(error.response.status);
+  //       console.log(error.response.headers);
+  //     } else if (error.request) {
+  //       // The request was made but no response was received
+  //       // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+  //       // http.ClientRequest in node.js
+  //       console.log(error.request);
+  //     } else {
+  //       // Something happened in setting up the request that triggered an Error
+  //       console.log("Error", error.message);
+  //     }
+  //     console.log(error.config);
+  //   });
   //
 });
 
