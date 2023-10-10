@@ -77,15 +77,12 @@ const initialState: songState = {
 
 export const getSongListAction = createAsyncThunk("song/getAll", async () => {
   //api to get list
-  const headers = {
-    Authorization: "Bearer my-token",
-    "My-Custom-Header": "foobar",
-  };
+  // const headers = {
+  //   Authorization: "Bearer my-token",
+  //   "My-Custom-Header": "foobar",
+  // };
   const response = await axios.get(
-    "https://songrestapi.onrender.com/songs/all",
-    {
-      headers,
-    }
+    "https://songrestapi.onrender.com/songs/all"
   );
   const responseArray = response.data.data;
   console.log("woev");
