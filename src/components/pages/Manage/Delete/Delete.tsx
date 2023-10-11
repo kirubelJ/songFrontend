@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "./Delete.css";
 import { useState } from "react";
 
-import axios from "axios";
 //
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../../redux/store";

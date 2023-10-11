@@ -24,7 +24,9 @@ const Landing = () => {
     };
     //
     axios
-      .get(`${process.env.REACT_APP_RESTAPI}/${Filter}/${SearchID}`,{headers})
+      .get(`${process.env.REACT_APP_RESTAPI}/${Filter}/${SearchID}`, {
+        headers,
+      })
       .then(function (response) {
         // handle success
         console.log(response.data);

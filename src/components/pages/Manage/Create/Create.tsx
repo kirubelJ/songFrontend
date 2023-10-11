@@ -3,8 +3,6 @@ import "./Create.css";
 //
 import { useState, useEffect } from "react";
 //
-import axios from "axios";
-//
 import type { RootState } from "../../../../redux/store";
 //
 import { useSelector, useDispatch } from "react-redux";

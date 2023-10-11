@@ -6,13 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //
 
 //Pages
-import Landing from "./components/pages/Landing/Landing";
-import Manage from "./components/pages/Manage/Manage";
 import Create from "./components/pages/Manage/Create/Create";
 import ReadAll from "./components/pages/Manage/Read/ReadAll";
 import Update from "./components/pages/Manage/Update/Update";
 import Delete from "./components/pages/Manage/Delete/Delete";
-import Statistics from "./components/pages/Statistics/Statistics";
 //
 
 import Home from "./components/pages/Home/Home";
