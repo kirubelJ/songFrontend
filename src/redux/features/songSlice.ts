@@ -1,6 +1,16 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { env } from "process";
+import dotenv from "dotenv";
+import { Environment } from "env-types";
+
+// If you're not adding the environment variables before script execution,
+// you'll need to call the load method. Like this:
+dotenv.config();
+Environment.load();
+
+interface ENV {
+  REACT_APP_RESTAPI_GET_ALL: string;
+}
 
 //
 import { useDispatch } from "react-redux";
@@ -82,7 +92,7 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
   //   "My-Custom-Header": "foobar",
   // };
 
-  const response = await axios.get(`${process.env.REACT_APP_RESTAPI_GET_ALL}`);
+  const response = await axios.get(`${Environment.REACT_APP_RESTAPI_GET_ALL}`);
   const responseArray = response.data.data;
   console.log("woev");
   console.log(responseArray);
