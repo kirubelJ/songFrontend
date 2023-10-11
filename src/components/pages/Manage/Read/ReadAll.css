@@ -15,7 +15,7 @@
   overflow: auto;
 }
 
-.songCard {
+/* .songCard {
   width: 200px;
   height: 250px;
   display: flex;
@@ -30,4 +30,44 @@
   background-size: 100% 100%;
   width: 200px;
   height: 150px;
+} */
+
+.songCard {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* Style the individual sections (Title, Artist, Album, Genre) as needed */
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.artist,
+.album,
+.genre {
+  font-size: 1rem;
+  color: #666;
 }

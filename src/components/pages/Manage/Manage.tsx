@@ -43,7 +43,7 @@ const Manage = () => {
       <div className="grid-container">
         <Link to="/readall">
           <div className="grid-item" ref={parallaxL1.ref}>
-            <div className="card">List of songs</div>
+            <div className="cardM">List of songs</div>
           </div>
         </Link>
 

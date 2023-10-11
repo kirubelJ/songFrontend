@@ -10,6 +10,7 @@ import Manage from "../Manage/Manage";
 import Statistics from "../Statistics/Statistics";
 import ReadAll from "../Manage/Read/ReadAll";
 //
+import Footer from "../../Footer/Footer";
 
 const Home = () => {
   return (
@@ -24,9 +25,9 @@ const Home = () => {
         <Parallax>
           <Statistics />
         </Parallax>
-        {/* <Parallax>
-          <TestRedux />
-        </Parallax> */}
+        <Parallax>
+          <Footer />
+        </Parallax>
       </div>
     </div>
   );
