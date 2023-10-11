@@ -10,7 +10,6 @@ import { useParallax } from "react-scroll-parallax";
 //
 
 //
-import ReactFlipCard from "reactjs-flip-card";
 //
 const Manage = () => {
   //
