@@ -24,7 +24,8 @@ const Landing = () => {
     };
     //
     axios
-      .get(`${process.env.REACT_APP_RESTAPI}/${Filter}/${SearchID}`, {
+      // .get(`${process.env.REACT_APP_RESTAPI}/${Filter}/${SearchID}`, {
+      .get(`https://songrestapi.onrender.com/songs/${Filter}/${SearchID}`, {
         headers,
       })
       .then(function (response) {

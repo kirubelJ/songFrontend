@@ -22,13 +22,16 @@ const Statistics = () => {
   async function genre() {
     try {
       const response1 = await axios.get(
-        `${process.env.REACT_APP_RESTAPI_GET_GENRE1}`
+        // `${process.env.REACT_APP_RESTAPI_GET_GENRE1}`
+        `https://songrestapi.onrender.com/songs/searchByGenre/Pop`
       );
       const response2 = await axios.get(
-        `${process.env.REACT_APP_RESTAPI_GET_GENRE2}`
+        // `${process.env.REACT_APP_RESTAPI_GET_GENRE2}`
+        `https://songrestapi.onrender.com/songs/searchByGenre/Traditional`
       );
       const response3 = await axios.get(
-        `${process.env.REACT_APP_RESTAPI_GET_GENRE3}`
+        // `${process.env.REACT_APP_RESTAPI_GET_GENRE3}`
+        `https://songrestapi.onrender.com/songs/searchByGenre/Other`
       );
       setGenre1(response1.data.data.length);
       setGenre2(response2.data.data.length);
