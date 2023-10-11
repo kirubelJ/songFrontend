@@ -78,7 +78,10 @@ export const getSongListAction = createAsyncThunk("song/getAll", async () => {
   //   "My-Custom-Header": "foobar",
   // };
   console.log(process.env.PUBLIC_URL);
-  const response = await axios.get(`${process.env.REACT_APP_API_URI}`);
+  //const response = await axios.get(`${process.env.REACT_APP_API_URI}`);
+  const response = await axios.get(
+    `https://songrestapi.onrender.com/songs/all`
+  );
   const responseArray = response.data.data;
   console.log("woev");
   console.log(responseArray);
@@ -132,7 +135,8 @@ export const addSongAction = createAsyncThunk(
   async (props: SongAddSchema) => {
     console.log(props);
     axios
-      .post(`${process.env.REACT_APP_RESTAPI_ADD}`, props)
+      // .post(`${process.env.REACT_APP_RESTAPI_ADD}`, props)
+      .post(`https://songrestapi.onrender.com/songs/add`, props)
       .then(function (response) {
         //console.log(response);
         // window.location.reload();
@@ -157,6 +161,7 @@ export const updateSongAction = createAsyncThunk(
   async (props: songUpdateSchema) => {
     //console.log(props);
     axios
+      // .put(`https://songrestapi.onrender.com/songs/update`, {
       .put(`https://songrestapi.onrender.com/songs/update`, {
         title: props.title,
         artist: props.artist,
@@ -188,7 +193,8 @@ export const deteteSongAction = createAsyncThunk(
       "Access-Control-Allow-Origin": "*",
     };
     axios
-      .delete(`${process.env.REACT_APP_RESTAPI_DELETE}/${props._id}`, {
+      // .delete(`${process.env.REACT_APP_RESTAPI_DELETE}/${props._id}`, {
+      .delete(`https://songrestapi.onrender.com/songs/delete/${props._id}`, {
         headers,
       })
       .then((response) => {
