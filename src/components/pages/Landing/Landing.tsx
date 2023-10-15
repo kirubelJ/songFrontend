@@ -77,7 +77,7 @@ const Landing = () => {
             // <li key={item._id}>{item.title}</li>
             <div className="songCard" key={item._id}>
               <div className="cover">
-                <h3>{item.title}</h3>
+                <h3>Title: {item.title}</h3>
               </div>
               <h3>Artist: {item.artist}</h3>
               <h3>Album: {item.album}</h3>

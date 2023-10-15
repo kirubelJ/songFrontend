@@ -12,6 +12,7 @@ const Footer = () => {
     <div>
       <h1>Powerd By</h1>
       <div className="container">
+        {/*  */}
         <div className="card">
           <div className="image">
             <img src={img1}></img>

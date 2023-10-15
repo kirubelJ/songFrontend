@@ -98,3 +98,14 @@ body {
 }
 
 /* Add CSS styles for the remaining footer components here */
+
+/* Responsive Design */
+
+/* Ref Samsung 51/71 (412x914) */
+@media (max-width: 415px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* End */

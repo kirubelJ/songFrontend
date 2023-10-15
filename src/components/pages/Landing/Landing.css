@@ -44,3 +44,24 @@
   flex-direction: row;
   gap: 10px;
 }
+
+/* Responsive Design */
+
+/* Ref Samsung 51/71 (412x914) */
+@media (max-width: 415px) {
+  /* .introheader {
+    color: red;
+  } for debuging */
+  .searchBar {
+    width: 250px;
+  }
+  .filterBar {
+    width: 100px;
+  }
+  .main {
+    max-height: 100vh;
+    max-width: auto;
+    background-repeat: no-repeat;
+  }
+}
+/* End */

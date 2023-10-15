@@ -48,18 +48,19 @@ const Statistics = () => {
   //
   return (
     <div className="StatMain">
-      <h1>Statistics</h1>
+      <h1 className="StatHeading">Statistics</h1>
       <div className="statContainer">
         <div className="statCard">
-          {Genre1}
+          <h2 className="statValue">{Genre1}</h2>
           <h2>Pop Songs</h2>
         </div>
         <div className="statCard">
-          {Genre2}
+          <h2 className="statValue">{Genre2}</h2>
           <h2>Traditional</h2>
         </div>
         <div className="statCard">
-          {Genre3} <h3>Other</h3>
+          <h2 className="statValue">{Genre3}</h2>
+          <h2>Other</h2>
         </div>
       </div>
     </div>
