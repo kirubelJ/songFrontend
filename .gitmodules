@@ -1,0 +1,6 @@
+[submodule "path/to/song-Frontend-Responsive"]
+	path = path/to/song-Frontend-Responsive
+	url = https://github.com/kirubelJ/Web-Development.git
+[submodule "path/to/songFrontend-Responsive"]
+	path = path/to/songFrontend-Responsive
+	url = https://github.com/kirubelJ/Web-Development.git
